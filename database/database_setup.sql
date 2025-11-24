@@ -130,4 +130,5 @@ SELECT product_id, name, category, material, price, stock FROM products;
 
 SELECT '=== TABLE STRUCTURES ===' as '';
 DESCRIBE shopping_carts;
+
 DESCRIBE cart_items;
