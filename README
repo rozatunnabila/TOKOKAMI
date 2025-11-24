@@ -55,30 +55,6 @@ Cart Persistence - Data keranjang tersimpan di database
 
 
 
-Jalankan (Run) file tersebut.
-
-Menggunakan Terminal / Command Line:
-
-Arahkan terminal ke folder root proyek.
-
-Kompilasi semua file Java (pastikan menyertakan path ke driver MySQL):
 
 
-javac -d bin -cp "lib/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar;src" src/main/Main.java src/model/*.java src/gui/*.java src/database/*.java src/utils/*.java
-(Catatan: Gunakan titik koma ; untuk pemisah di Windows, atau titik dua : di Linux/Mac).
 
-Jalankan aplikasi:
-
-java -cp "bin;lib/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar" main.Main
-
-🖼️ Akun Demo (Default)
-Jika terdapat data dummy di database_setup.sql, Anda mungkin bisa menggunakan akun berikut (silakan cek file SQL untuk password pastinya):
-
-Admin: admin / (password cek di database)
-
-Customer: Silakan registrasi akun baru melalui menu Register.
-
-📝 Catatan Tambahan
-Pastikan folder assets/images berada di lokasi yang benar agar gambar produk dapat dimuat dengan sempurna pada GUI..
-
-Dibuat untuk Arlene Jewelry Shop Project.
