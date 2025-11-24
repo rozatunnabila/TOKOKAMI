@@ -1,0 +1,10 @@
+ProductID,Name,Category,Price,Stock,ImagePath
+B001,Silver Charm Bracelet,Bracelet,300.00,20,assets/images/products/B001.png
+B002,Diamond Tennis Bracelet,Bracelet,3500.00,5,assets/images/products/B002.png
+E001,Diamond Stud Earrings,Earrings,1500.00,10,assets/images/products/E001.png
+E002,Gold Hoop Earrings,Earrings,400.00,15,assets/images/products/E002.png
+N001,Pearl Necklace,Necklace,800.00,8,assets/images/products/N001.png
+N002,Gold Chain Necklace,Necklace,600.00,12,assets/images/products/N002.png
+R001,Diamond Engagement Ring,Ring,2500.00,10,assets/images/products/R001.png
+R002,Gold Wedding Band,Ring,1200.00,15,assets/images/products/R002.png
+R003,Sapphire Promise Ring,Ring,1800.00,8,assets/images/products/R003.png

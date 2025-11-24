@@ -1,0 +1,6 @@
+UserID,Username,DisplayName,Email,Phone,Address,Role
+ADM001,admin,Admin admin,admin@arlene.com,08123456789,Jl. Admin No. 1  Jakarta,ADMIN
+CUST001,customer1,Alice Johnson,customer1@email.com,08111111111,Jl. Customer No. 1  Bandung,CUSTOMER
+CUST002,alice,Alice Wonderland,alice@email.com,08222222222,Jl. Merdeka No. 45  Surabaya,CUSTOMER
+CUST003,budi,Budi Santoso,budi@email.com,08333333333,Jl. Sudirman No. 10  Jakarta,CUSTOMER
+CUST004,Putroe,Putroe Fatimah Azzahra,putroe@gmail.com,082225940610,Banda Aceh,CUSTOMER
