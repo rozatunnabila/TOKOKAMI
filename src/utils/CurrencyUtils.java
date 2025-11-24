@@ -25,5 +25,3 @@ public final class CurrencyUtils {
         return "Rp " + formatter.format(convertedAmount);
     }
 }
-
-
