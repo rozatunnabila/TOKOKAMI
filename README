@@ -51,39 +51,9 @@ Quantity Management - Update jumlah item
 Real-time Stock Validation - Validasi stok saat checkout
 Cart Persistence - Data keranjang tersimpan di database
 
-⚙️ Prasyarat (Prerequisites)
-Sebelum menjalankan aplikasi, pastikan Anda telah menginstal:
 
-Java Development Kit (JDK) (Minimal versi 8).
 
-MySQL Server (XAMPP/WAMP/MySQL Workbench).
 
-IDE Java (Disarankan: VS Code, IntelliJ IDEA, atau Eclipse).
-
-🚀 Cara Instalasi dan Menjalankan
-Langkah 1: Setup Database
-Buka aplikasi manajemen database Anda (misalnya phpMyAdmin atau MySQL Workbench).
-
-Buat database baru (nama database biasanya tercantum di file database_setup.sql atau DatabaseConnection.java).
-
-Import file SQL yang terletak di: ArleneJewelryShop/database/database_setup.sql Ini akan membuat tabel yang diperlukan (users, products, orders, dll) dan mengisi data awal.
-
-Langkah 2: Konfigurasi Koneksi Database
-Periksa file src/database/DatabaseConnection.java. Pastikan kredensial database sesuai dengan pengaturan komputer Anda:
-
-// Contoh konfigurasi di DatabaseConnection.java
-private static final String URL = "jdbc:mysql://localhost:3306/arlene_jewelry_db"; // Sesuaikan nama DB
-private static final String USER = "root"; // Sesuaikan username
-private static final String PASSWORD = ""; // Sesuaikan password
-
-Langkah 3: Menjalankan Aplikasi
-Menggunakan IDE (VS Code / IntelliJ / Eclipse):
-
-Buka folder ArleneJewelryShop sebagai Project.
-
-Tambahkan lib/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar ke dalam Build Path atau Dependencies project Anda.
-
-Buka file src/main/Main.java.
 
 Jalankan (Run) file tersebut.
 
