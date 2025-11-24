@@ -382,4 +382,5 @@ public class ImageUtils {
             System.out.println("❌ TEST FAILED: Could not load image");
         }
     }
+
 }
