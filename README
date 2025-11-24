@@ -16,8 +16,99 @@ Product Search - Pencarian produk berdasarkan nama/kategori
 
 🛒 Shopping Cart System
 Add to Cart - Tambah produk ke keranjang
+
+### Untuk Administrator (Admin)
+* **Login Admin:** Akses khusus untuk pengelola toko.
+* **Dashboard Admin:** Pusat kontrol untuk melihat status toko.
+* **Manajemen Inventaris:** (Tergantung implementasi) Kemampuan untuk melihat daftar produk.
+
+
+## 🛠️ Teknologi yang Digunakan
+
+* **Bahasa Pemrograman:** Java (JDK 8 atau lebih tinggi).
+* **GUI (Antarmuka):** Java Swing (JFrame, JPanel).
+* **Database:** MySQL.
+* **Konektivitas Database:** JDBC (Java Database Connectivity).
+* **Library:** MySQL Connector J (9.5.0).
+
+## 📂 Struktur Proyek
+
+```text
+ArleneJewelryShop/
+├── assets/                 # Aset statis (gambar produk, banner, hasil ekspor CSV)
+├── database/               # Skrip SQL untuk setup database
+│   └── database_setup.sql
+├── lib/                    # Library eksternal (Driver JDBC)
+│   └── mysql-connector-j-9.5.0.jar
+├── src/                    # Kode sumber Java
+│   ├── database/           # Kelas untuk koneksi dan operasi database (DAO)
+│   ├── gui/                # Kelas antarmuka pengguna (Login, Dashboard, dll)
+│   ├── main/               # Entry point aplikasi (Main.java)
+│   ├── model/              # Kelas representasi data (POJO/Entity)
+│   └── utils/              # Kelas utilitas (Format mata uang, Gambar)
+└── bin/                    # File .class hasil kompilasi (output)
 Quantity Management - Update jumlah item
 Real-time Stock Validation - Validasi stok saat checkout
 Cart Persistence - Data keranjang tersimpan di database
 
+⚙️ Prasyarat (Prerequisites)
+Sebelum menjalankan aplikasi, pastikan Anda telah menginstal:
 
+Java Development Kit (JDK) (Minimal versi 8).
+
+MySQL Server (XAMPP/WAMP/MySQL Workbench).
+
+IDE Java (Disarankan: VS Code, IntelliJ IDEA, atau Eclipse).
+
+🚀 Cara Instalasi dan Menjalankan
+Langkah 1: Setup Database
+Buka aplikasi manajemen database Anda (misalnya phpMyAdmin atau MySQL Workbench).
+
+Buat database baru (nama database biasanya tercantum di file database_setup.sql atau DatabaseConnection.java).
+
+Import file SQL yang terletak di: ArleneJewelryShop/database/database_setup.sql Ini akan membuat tabel yang diperlukan (users, products, orders, dll) dan mengisi data awal.
+
+Langkah 2: Konfigurasi Koneksi Database
+Periksa file src/database/DatabaseConnection.java. Pastikan kredensial database sesuai dengan pengaturan komputer Anda:
+
+// Contoh konfigurasi di DatabaseConnection.java
+private static final String URL = "jdbc:mysql://localhost:3306/arlene_jewelry_db"; // Sesuaikan nama DB
+private static final String USER = "root"; // Sesuaikan username
+private static final String PASSWORD = ""; // Sesuaikan password
+
+Langkah 3: Menjalankan Aplikasi
+Menggunakan IDE (VS Code / IntelliJ / Eclipse):
+
+Buka folder ArleneJewelryShop sebagai Project.
+
+Tambahkan lib/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar ke dalam Build Path atau Dependencies project Anda.
+
+Buka file src/main/Main.java.
+
+Jalankan (Run) file tersebut.
+
+Menggunakan Terminal / Command Line:
+
+Arahkan terminal ke folder root proyek.
+
+Kompilasi semua file Java (pastikan menyertakan path ke driver MySQL):
+
+
+javac -d bin -cp "lib/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar;src" src/main/Main.java src/model/*.java src/gui/*.java src/database/*.java src/utils/*.java
+(Catatan: Gunakan titik koma ; untuk pemisah di Windows, atau titik dua : di Linux/Mac).
+
+Jalankan aplikasi:
+
+java -cp "bin;lib/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar" main.Main
+
+🖼️ Akun Demo (Default)
+Jika terdapat data dummy di database_setup.sql, Anda mungkin bisa menggunakan akun berikut (silakan cek file SQL untuk password pastinya):
+
+Admin: admin / (password cek di database)
+
+Customer: Silakan registrasi akun baru melalui menu Register.
+
+📝 Catatan Tambahan
+Pastikan folder assets/images berada di lokasi yang benar agar gambar produk dapat dimuat dengan sempurna pada GUI..
+
+Dibuat untuk Arlene Jewelry Shop Project.
