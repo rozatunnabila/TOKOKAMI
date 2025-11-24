@@ -1,1 +1,22 @@
+💎 Arlene Jewelry Shop
+E-commerce platform khusus perhiasan dengan sistem manajemen inventori dan transaksi yang lengkap.
+
+🚀 Fitur Utama
+
+👥 Authentication & User Management
+Registrasi Customer - Pendaftaran pengguna baru
+Login Multi-role - Admin dan Customer
+Profile Management - Kelola data profil pengguna
+
+🛍️ Product Management
+CRUD Products - Tambah, lihat, edit, hapus produk
+Kategori Produk - Ring, Necklace, Bracelet, Earrings
+Inventory Management - Kelola stok otomatis
+Product Search - Pencarian produk berdasarkan nama/kategori
+
+🛒 Shopping Cart System
+Add to Cart - Tambah produk ke keranjang
+Quantity Management - Update jumlah item
+Real-time Stock Validation - Validasi stok saat checkout
+Cart Persistence - Data keranjang tersimpan di database
 
